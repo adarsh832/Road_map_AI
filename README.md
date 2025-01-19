@@ -30,11 +30,5 @@ Users can input their learning goals, the time they have available, and their cu
 ## Contributing
 If you would like to contribute to this project, please fork the repository and submit a pull request with your changes.
 
-## License
-This project is licensed under the MIT License.
-
-## Contact Information
-For any inquiries or support, please reach out to [your-email@example.com].
-
 ## Acknowledgments
 This project uses the Ollama library for AI-driven chat responses.
