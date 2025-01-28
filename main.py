@@ -1,14 +1,13 @@
 import streamlit as st
 from ollama import chat
+import ollama
 from ollama import ChatResponse
 import time as tm
-      
+ollama.create(model='roadgen', from_='llama3.2', system="You are a AI that help people to get roadmap for learning.give them a step by step guide to learn.")
 
 def roadmap(learn,time,level):
-    response: ChatResponse = chat(model='llama3.2', messages=[
+    response: ChatResponse = chat(model='roadgen', messages=[
          {
-            'role': 'system',
-            'content': 'You are a AI that help people to get roadmap for learning.give them a step by step guide to learn.',
             'role': 'user',
             'content': f'I want to leant {learn} in {time} and I am {level} level. give me a roadmap to learn. step by step guide with resources.',
 
